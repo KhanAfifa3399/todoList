@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(248, 246, 246);
+}
+/* Navbar related css */
+header{
+  background-color: #121212;
+ 
+}
+li{
+list-style: none;
+}
+a{
+color: white;
+text-decoration: none;
+font-size: 20px;
+
+}
+
+.navbar{
+height: 70px;
+display: flex;
+align-items: center;
+padding: 0 25px;
+}
+.nav-menu{
+display: flex;
+/* justify-content: space-evenly; */
+align-items: center;
+gap: 60px;
+left: 40px;
+}
+.nav-item a:hover{
+opacity: 0.7;;
+}
+.hamburger{
+display: none;
+cursor: pointer;
+
+}
+.bar{
+display: block;
+width: 25px;
+height: 3px;
+margin: 5px auto;
+background-color: white;
+}
+
+@media(max-width:600px){
+.hamburger{
+  display: block;
+
+}
+.nav-menu{
+position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: #262626;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+.nav-item{
+margin: 16px 0;
+}
+.nav-menu.active{
+left: 0;
+}
+main{
+position: absolute;
+top: 35%;
+left: 3%;
+}
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  /* margin-top: 50px; */
+}
+
+th,
+td {
+  padding: 5px;
+}
+
+
+}
+
+
+table,
+td,
+th {
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+th,
+td {
+  padding: 15px;
+}
+
+tr > th {
+  background-color: #121212;
+  color: white;
+}
